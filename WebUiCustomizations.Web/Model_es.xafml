@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="WebUiCustomizations.Module.BusinessObjects.Customer">
+      <OwnMembers>
+        <Member Name="Address" Caption="Direccion" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Views>
+    <DetailView Id="Customer_DetailView" Caption="Cliente" />
+  </Views>
+</Application>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="WebUiCustomizations" PreferredLanguage="(User language)">
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChooseLanguage">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="en" ImageName="BO_Country" />
+        </ChoiceActionItems>
+      </Action>
+    </Actions>
+  </ActionDesign>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="20.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>
