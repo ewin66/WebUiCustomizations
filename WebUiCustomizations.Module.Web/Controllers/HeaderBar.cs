@@ -29,7 +29,7 @@ namespace WebUiCustomizations.Module.Web.Controllers
             toggleNavBarAction = new SimpleAction(this,"Mi Menu", "Security");
             toggleNavBarAction.ImageName = "burger";
             toggleNavBarAction.PaintStyle = ActionItemPaintStyle.Image;            
-            // toggleNavBarAction.SetClientScript("OnClick('LPcell','separatorImage',true)", false);
+            toggleNavBarAction.SetClientScript("OnClick('LPcell','separatorImage',true)", false);
             toggleNavBarAction.SetClientScript("window.xafNavigation.Toggle()",false);
             
 
