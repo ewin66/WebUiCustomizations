@@ -28,6 +28,8 @@
             // 
             this.RequiredModuleTypes.Add(typeof(WebUiCustomizations.Module.WebUiCustomizationsModule));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule));
+            this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Security.SecurityModule));
+
         }
 
         #endregion

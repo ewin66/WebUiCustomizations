@@ -4,6 +4,7 @@
     <Actions>
       <Action Id="ChooseFormattingCulture" IsPostBackRequired="True" />
       <Action Id="ChooseLanguage" IsPostBackRequired="True" />
+      <Action Id="Mi Menu" PaintStyle="Image" ImageMode="UseItemImage" />
     </Actions>
   </ActionDesign>
   <Options CollectionsEditMode="Edit" />

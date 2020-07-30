@@ -41,6 +41,7 @@
     <Reference Include="DevExpress.Data.v20.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.ExpressApp.v20.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -79,6 +80,12 @@
     <Compile Include="BusinessObjects\Hints.cs" />
     <Compile Include="BusinessObjects\HintsRepository.cs" />
     <Compile Include="BusinessObjects\LocalizationObject.cs" />
+    <Compile Include="Controllers\RigthSideControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\RigthSideControls.Designer.cs">
+      <DependentUpon>RigthSideControls.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
@@ -89,7 +96,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controllers\RigthSideControls.resx">
+      <DependentUpon>RigthSideControls.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Module.resx">
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +127,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Welcome.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\españaflag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\descarga.png" />
+    <EmbeddedResource Include="Images\hamburguesa2.png" />
+    <EmbeddedResource Include="Images\hamburguesa3.png" />
+    <EmbeddedResource Include="Images\hamburguesa4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\bonus2.png" />
+    <EmbeddedResource Include="Images\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\hamburgesa5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\burger.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

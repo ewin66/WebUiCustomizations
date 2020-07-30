@@ -28,6 +28,7 @@ namespace WebUiCustomizations.Web {
             WebApplication.SetInstance(Session, new WebUiCustomizationsAspNetApplication());
             DevExpress.ExpressApp.Web.Templates.DefaultVerticalTemplateContentNew.ClearSizeLimit();
             WebApplication.Instance.SwitchToNewStyle();
+
             if(ConfigurationManager.ConnectionStrings["ConnectionString"] != null) {
                 WebApplication.Instance.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             }
@@ -41,6 +42,9 @@ namespace WebUiCustomizations.Web {
                 WebApplication.Instance.DatabaseUpdateMode = DatabaseUpdateMode.UpdateDatabaseAlways;
             }
 #endif
+      //      WebApplication.Instance.Settings.DefaultVerticalTemplateContentPath =
+      //"DefaultVerticalTemplateContent1.ascx";
+   
             WebApplication.Instance.Setup();
             WebApplication.Instance.Start();
         }

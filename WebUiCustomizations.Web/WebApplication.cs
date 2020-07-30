@@ -11,6 +11,7 @@ namespace WebUiCustomizations.Web {
         private DevExpress.ExpressApp.SystemModule.SystemModule module1;
         private DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule module2;
         private WebUiCustomizations.Module.WebUiCustomizationsModule module3;
+        private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
         private WebUiCustomizations.Module.Web.WebUiCustomizationsAspNetModule module4;
 
         #region Default XAF configuration options (https://www.devexpress.com/kb=T501418)
@@ -80,6 +81,7 @@ namespace WebUiCustomizations.Web {
         private void InitializeComponent() {
             this.module1 = new DevExpress.ExpressApp.SystemModule.SystemModule();
             this.module2 = new DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule();
+            this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
             this.module3 = new WebUiCustomizations.Module.WebUiCustomizationsModule();
             this.module4 = new WebUiCustomizations.Module.Web.WebUiCustomizationsAspNetModule();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -90,6 +92,7 @@ namespace WebUiCustomizations.Web {
             this.CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
             this.Modules.Add(this.module1);
             this.Modules.Add(this.module2);
+            this.Modules.Add(this.securityModule1);
             this.Modules.Add(this.module3);
             this.Modules.Add(this.module4);
             this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.WebUiCustomizationsAspNetApplication_DatabaseVersionMismatch);

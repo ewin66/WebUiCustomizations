@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application PreferredLanguage="es">
+  <ActionDesign>
+    <Actions>
+      <Action Id="Menu" ImageName="Menu" />
+    </Actions>
+  </ActionDesign>
   <SchemaModules>
     <SchemaModule Name="SystemAspNetModule" Version="20.1.3.0" IsNewNode="True" />
     <SchemaModule Name="SystemModule" Version="20.1.3.0" IsNewNode="True" />

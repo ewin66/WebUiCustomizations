@@ -5,6 +5,7 @@
       <Action Id="ChooseLanguage">
         <ChoiceActionItems>
           <ChoiceActionItem Id="en" ImageName="BO_Country" />
+          <ChoiceActionItem Id="es" ImageName="" />
         </ChoiceActionItems>
       </Action>
     </Actions>
@@ -12,4 +13,25 @@
   <SchemaModules>
     <SchemaModule Name="SystemModule" Version="20.1.3.0" IsNewNode="True" />
   </SchemaModules>
+  <Views>
+    <DetailView Id="Customer_DetailView">
+      <Items>
+        <ActionContainerViewItem Id="MyActionCOntainer" ActionContainer="MyCategory" Caption="MyActionCOntainer(6)" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Customer" Caption="Customer" RelativeSize="100">
+              <LayoutGroup Id="Autoc5cc03fe-dfd9-44db-860a-88da23a361fe" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="6.4516129032258061" IsNewNode="True">
+                <LayoutItem Id="Name" ViewItem="Name" Index="0" RelativeSize="73.790951638065522" IsNewNode="True" />
+                <LayoutItem Id="MyActionCOntainer" ViewItem="MyActionCOntainer" Index="1" RelativeSize="26.209048361934478" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Address" RelativeSize="93.548387096774192" />
+              <LayoutItem Id="Name" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
 </Application>
